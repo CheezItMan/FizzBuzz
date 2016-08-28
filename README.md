@@ -92,7 +92,9 @@ rvm --create --ruby-version ruby-2.3@FIZZ-BUZZ
 
 This will create a pair of files which specify the version of Ruby to use in your project and the project name (Fizz Buzz).  Later we will use Gemfiles to serve this purpose.  
 
-We will also create a [.gitignore](https://github.com/github/gitignore/blob/master/Ruby.gitignore) file which is a file which tells git to ignore certain files & directories.  Copy this file [here](https://github.com/github/gitignore/blob/master/Ruby.gitignore) and save it as .gitignore in your project folder.  Add a line to have it ignore the **.DS_Store** file.
+We will also create a [.gitignore](https://github.com/github/gitignore/blob/master/Ruby.gitignore) file which is a file which tells git to ignore certain files & directories.  Copy this file **[here](https://github.com/github/gitignore/blob/master/Ruby.gitignore)** and save it as .gitignore in your project folder.  
+
+Add a line to have it ignore the **.DS_Store** file.
 
 ![Editing .gitignore](images/gitignore.png "Editing .gitignore")
 
@@ -312,3 +314,7 @@ Now write the further two test cases and edit the *fizzbuzz* method to solve the
 
 Notice that our solution is not terrifically efficient (technical term).  It potentially compares the number to 3 & 5 multiple times, so there is a more efficient method.  Attempt to improve on the solution, and then re-run the tests to make sure it still satisfies the specs.  
 
+## Resources
+*  [Gitignore Sample](https://github.com/github/gitignore/blob/master/Ruby.gitignore)
+*  [Intro to Rake](https://learn.co/lessons/intro-to-rake)
+*  [More on Rake](http://www.stuartellis.eu/articles/rake/)
