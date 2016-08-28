@@ -92,7 +92,7 @@ rvm --create --ruby-version ruby-2.3@FIZZ-BUZZ
 
 This will create a pair of files which specify the version of Ruby to use in your project and the project name (Fizz Buzz).  Later we will use Gemfiles to serve this purpose.  
 
-We will also create a [.gitignore](https://github.com/github/gitignore/blob/master/Ruby.gitignore) file which is a file which tells git to ignore certain files & directories.  Copy this file [here](https://github.com/github/gitignore/blob/master/Ruby.gitignore) and save it as .gitignore in your project folder.  Add a line to have it ignore the .DS_Store file.
+We will also create a [.gitignore](https://github.com/github/gitignore/blob/master/Ruby.gitignore) file which is a file which tells git to ignore certain files & directories.  Copy this file [here](https://github.com/github/gitignore/blob/master/Ruby.gitignore) and save it as .gitignore in your project folder.  Add a line to have it ignore the **.DS_Store** file.
 
 ![Editing .gitignore](images/gitignore.png "Editing .gitignore")
 
@@ -171,9 +171,9 @@ class YearTest < Minitest::Test
 end
 ```
 
-This works fairly well, but Minitest has another format which does the same thing, but it's not so readable for non-Ruby programmers and it's not in a similar format to other testing frameworks like **RSpec**.
+This works fairly well, but Minitest has another format which does the same thing, is more readable for non-Ruby programmers and it's in a similar format to other testing frameworks like **RSpec**.
 
-We can build the same sort of testing setup using spec-style testing.  
+The new format is called spec-style testing.  
 
 ```Ruby
 require 'minitest'
@@ -185,7 +185,7 @@ require 'minitest/reporters'
 require_relative 'leap_year'
 
 describe "Testing Leap Year" do
-  it "Testing Leap Year on reguar years divisible by 4" do
+  it "Testing Leap Year on regular years divisible by 4" do
       leap_year(1996).must_equal(true)
   end
 end
@@ -195,7 +195,7 @@ The **describe** line simply describes the types of tests you are running. You c
 
 The line starting with **it** simply defines a test with a descriptive String passed as a parameter, think of it like a method definition.  
 
-The Minitest Specs add a bunch of methods like in the chart below letting you write more readable tests. They are analogous to the assert methods we used in our previous automated testing.  
+Minitest Specs add a bunch of methods like in the chart below letting you write more readable tests. They are analogous to the assert methods we used in our previous automated testing.  
 
 #### Minitest Spec Expectation Methods
 
@@ -250,7 +250,7 @@ Now lets setup our fizzbuzz method.  Lets create a lib/fizzbuzz.rb file
 ```Ruby
 # Fizzbuzz.rb
 
-class Fizzbuzz
+class FizzBuzz::Fizzbuzz
   def self.fizzbuzz(number)
     return number.to_s
   end
