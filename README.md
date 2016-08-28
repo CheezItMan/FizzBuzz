@@ -75,12 +75,12 @@ Done installing documentation for minitest-reporters after 0 seconds
 
 #### Step 1:  Creating a Github Repository
 
-Now that we have Rake installed we can set up our project.  First go to Github and create a new repository and then clone the repo to your terminal.
+Now that we have Rake installed we can set up our project.  First go to Github and create a new repository named FizzBuzz and then clone the repo to your terminal.
 
 ![Create a new repo](images/repo.png "Create a new Repo")
 
 ```bash
-git clone FIZZ-BUZZ
+git clone git@github.com:<USERNAME>/FizzBuzz.git
 ```
 
 Then change directory into your local repository (cd) and create some configuration files by typing:
